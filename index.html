@@ -20,15 +20,25 @@
 	</nav> 
 	<div id="modofiltrar" class="hidden">
 		<span class="ciudadSelect">cuidad</span>
-		<select>
-			<option>barcelona</option>
-			<option>terrassa</option>
-			<option>sabadell</option>
+		<select id="resultSelect">
+			<option value="barcelona">barcelona</option>
+			<option value="terrassa">terrassa</option>
+			<option value="badalona">badalona</option>
 		</select>
-		<span class="servicioSelect">servicio</span>
+		<span class="ciudadSelect">servicios</span>
+		<select id="servicioSelect">
+			<option value="electricidad">electricidad</option>
+			<option value="psicologa">psicologa</option>
+		</select>
+		<span class="ciudadSelect">provencia</span>
 		<select>
-			<option>abogado</option>
-			<option>psicologa</option>
+			<option>bar</option>
+			<option>tar</option>
+		</select>
+		<span class="ciudadSelect">la intrega</span>
+		<select>
+			<option>a domiclio</option>
+			<option> en local</option>
 		</select>
 		<button type="button" id="buttonSelect">buscar</button>
 	</div>
@@ -39,6 +49,7 @@
 	
 <div id="serchView" class="hidden">
 	<label class="bus">semphony</label><input id="serch" type="text" placeholder="¿Qué servicio te apetece hoy?">
+	<button id="buttonSerch" type="button">buscar</button>
 	</div>
 <div id="perfilView" class="hidden">
 	<form>
@@ -77,13 +88,16 @@ inputmode= "9"
 required
 >
 </div>	
-	   	</div>
-	</div>
-	
+</div>
+</div>
+<button type="button" id="buttonCrear" class="hidden">crear</button>
+<hr>
 	<footer>
 		<p>&copy;2027 Semphony SL</p>
 	</footer>
-	
+	<br>
+	<br>
+	<br>
 </body>
 <script src="SSS.js"></script>
 </html>

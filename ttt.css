@@ -1,6 +1,5 @@
 .colorOffer{
-position: relative;
-diplay: flex;
+display: flex;
 flex-direction: column;
 align-items: center;
 border: 1px solid  rgba(255, 255, 255, 0.1);
@@ -12,14 +11,14 @@ text-align: center;
 font-size: 18px;
 width: 250px;
 height: 396px;
-margin: 15px auto;
+margin: 25px auto;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 .FFF{
 width: 150px;
 height: 150px;
 border: 1px solid #323232;
-border-radius: 13px;
+border-radius: 17px;
 margin: 10px;
 object-position: center-top;
 }
@@ -33,7 +32,7 @@ font-family: ui-rounded, 'Arial Rounded MT Bold','Arial Rounded MT','Segoe UI', 
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: graycale;
 letter-spacing: -0.01em;
-font-weight: 700;
+font-weight: 600;
 
 }
 .newPrice{
@@ -55,7 +54,7 @@ border-radius: 30px;
 font-size: 15px;
 padding: 10px;
 text-transform: uppercase;
-margin: 10px;
+margin: 5px;
 text-decoration: none;
 backdrop-filter: blur(0.2px);
 -webkit-filter: blur(0.2px);
@@ -202,7 +201,7 @@ color: white;
 padding: 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 17px;
-margin: 10px auto;
+margin: auto;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 .jjj{
@@ -246,15 +245,13 @@ transition: border 0,3s;
 position: relative;
 display: flex; 
 flex-direction: column;
-align-items: center;
+align-items: left;
 background: #121212;
 font-size: 18px;
 color: white;
 padding: 20px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 margin: 15px auto;
-width: 250px;
-height: 396px;
 border-radius: 17px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -267,7 +264,7 @@ transition: border 0,3s;
 .Holabuenas p{
 text-transform: uppercase;
 color: white;
-padding: 10px;
+padding: 15px;
 font-size: 15px
 }
 .Holabuenas p:hover{
@@ -276,8 +273,6 @@ transition: color 0,3s;
 }
 #planesCool{
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280, 1fr)) !important;
-gap: 24px;
 }
 .Holabuenas h2{
 text-transform: uppercase;
@@ -344,12 +339,13 @@ color: linear-gradient(135deg, #89939E, #dce3ea, #4b5563);
 position: fixed;
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 z-index: 999;
 background: rgba(18,18,18, 0.75);
-padding: 20px;
+padding: 15px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 width: 250px;
 height: 396px;
@@ -361,7 +357,7 @@ backdrop-filter: blur(15px);
 color: white;
 font-size: 12px;
 text-align: center;
-margin: 15px;
+margin: 5px;
 }
 .servicioSelect{
 color: white;
@@ -405,4 +401,12 @@ background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040
 color: #5b2c83 ;
 transition: color 0,3s;
 }
-
+#buttonCrear{
+display: flex;
+flex-direction: conter;
+margin: auto;
+padding: 10px;
+border-radius: 30px;
+width: 280px;
+justify-content: center;
+}

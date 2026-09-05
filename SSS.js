@@ -8,15 +8,22 @@ planesCool = document.getElementById("planesCool").innerHTML = plan.join("");
 
 let offers = [{name: "john smith", image: "foto.jpg", oldPrice: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
 {name: "maria lopiz", image: "fotos.jpg", oldPrice: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
-{name: " ahmed benhiba", image: "III.jpg", oldPrice: "4,99$ / mes", newPrice: "4,99$ / 3 meses", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
+{name: "ahmed benhiba", image: "III.jpg", oldPrice: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
 {name: "hbomax", image: "hbomax.jpg", oldPrice: "6,99$ / mes", newPrice: "7,99$", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
 {name: "apple", image: "apple.jpg", oldPrice: "5,99$ / mes", newPrice: "10$ /2 meses", link: "https://www.apple.com/es-es"},
 {name: "disney", image: "dsn.jpg", oldPrice: "6,99$ / mes", newPrice: "6,99$ / 2 meses", link: " https://www.disney.com/es-es"}];
-let cardoffers = offers.map( function(offer){
+
+let buttonSelect = document.getElementById("buttonSelect");
+buttonSelect.addEventListener("click", function(){
+	let resultSelect = document.getElementById("resultSelect").value;
+	let resultados = offers.filter(numbre => numbre.newPrice === resultSelect);
+	modofil.classList.add("hidden");
+let cardoffers = resultados.map( function(offer){
 	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
-let ofertCards = document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 
+document.getElementById("ofertCards").innerHTML = cardoffers.join("");
+});
 const ofertCardsView = document.getElementById("ofertCards");
 const serchLink = document.getElementById("serchLink");
 const serchView = document.getElementById("serchView");
