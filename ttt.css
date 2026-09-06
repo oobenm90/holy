@@ -10,14 +10,14 @@ padding: 20px;
 text-align: center;
 font-size: 18px;
 width: 250px;
-height: 396px;
-margin: 25px auto;
+height: 400px;
+margin: auto;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 .FFF{
 width: 150px;
 height: 150px;
-border: 1px solid #323232;
+border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 17px;
 margin: 10px;
 object-position: center-top;
@@ -49,12 +49,11 @@ min-height: 48px;
 .colorOffer a{
 background: white;
 color: black;
-border: 1px solid #121212;
+border: 1px solid rgba(255,255,255, 0.1);
 border-radius: 30px;
 font-size: 15px;
 padding: 10px;
 text-transform: uppercase;
-margin: 5px;
 text-decoration: none;
 backdrop-filter: blur(0.2px);
 -webkit-filter: blur(0.2px);
@@ -431,9 +430,8 @@ padding: 10px;
 .crearBtn{
 display: flex;
 justify-content: center;
-width: 250px;
 color: balck;
-background: white;
+margin: auto;
 }
 #nuevoBtn{
 padding: 10px;
