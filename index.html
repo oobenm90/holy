@@ -19,12 +19,6 @@
 	</div>
 	</nav> 
 	<div id="modofiltrar" class="hidden">
-		<span class="ciudadSelect">cuidad</span>
-		<select id="resultSelect" class="selectCss">
-			<option value="barcelona">barcelona</option>
-			<option value="terrassa">terrassa</option>
-			<option value="badalona">badalona</option>
-		</select>
 		<span class="ciudadSelect">servicios</span>
 		<select id="servicioSelect" class="selectCss">
 			<option value="electricidad">electricidad</option>
@@ -34,6 +28,12 @@
 		<select class="selectCss">
 			<option>bar</option>
 			<option>tar</option>
+		</select>
+		<span class="ciudadSelect">cuidad</span>
+		<select id="resultSelect" class="selectCss">
+			<option value="barcelona">barcelona</option>
+			<option value="terrassa">terrassa</option>
+			<option value="badalona">badalona</option>
 		</select>
 		<span class="ciudadSelect">la intrega</span>
 		<select class="selectCss">
@@ -49,15 +49,18 @@
 	
 <div id="serchView" class="hidden">
 	<label class="bus">semphony</label><input id="serch" type="text" placeholder="¿Qué servicio te apetece hoy?">
-	<button id="buttonSerch" type="button">buscar</button>
 	</div>
 <div id="perfilView" class="hidden">
+	<div class="crearBtn">
+	<button id="nuevoBtn" type="button">Iniciar sesión</button>
+	<button id="cauntBtn" type="button">crear una cuenta</button>
+	</div>
 	<form>
 		 <div class="YYY">
 		<label class="jjj">¿cuál es tu nombre y appellido? </label>
-		<input type="text">
+		<input class="selectBtn"type="text">
 		<label for="foto" class="jjj">foto de perfil</label>
-		<input
+		<input class="selectBtn"
 		type= "file"
 		id= "foto"
 		name= "foto"
@@ -87,7 +90,10 @@ placeholder= "612345678";
 inputmode= "9"
 required
 >
-</div>	
+</div>
+	
+<button id="buttonEnviar" type="submit">crear</button>
+
 </div>
 </div>
 <button type="button" id="buttonCrear" class="hidden">crear</button>
