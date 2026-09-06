@@ -431,7 +431,9 @@ padding: 10px;
 .crearBtn{
 display: flex;
 justify-content: center;
-margin: 15px;
+width: 250px;
+color: balck;
+background: white;
 }
 #nuevoBtn{
 padding: 10px;
@@ -439,6 +441,7 @@ margin: 8px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 width: 150px;
+color: black;
 }
 #cauntBtn{
 padding: 10px;
@@ -446,4 +449,5 @@ margin: 8px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 width: 150px;
+color: black;
 }
