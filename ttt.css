@@ -223,11 +223,11 @@ font-size: 15px;
 }
 #premiumBtn{
 color: white;
-background: linear-gradient(135deg, #89939E, #dce3ea, #4b5563);
+background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040d 100%);
 text-decoration: none;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
-font-size: 18px;
+font-size: 20px;
 padding: 10px;
 margin-top: 5px;
 }
@@ -431,7 +431,6 @@ padding: 10px;
 display: flex;
 justify-content: center;
 color: balck;
-margin: auto;
 }
 #nuevoBtn{
 padding: 10px;
@@ -446,6 +445,6 @@ padding: 10px;
 margin: 8px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
-width: 150px;
+width: 140px;
 color: black;
 }
