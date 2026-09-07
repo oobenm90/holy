@@ -400,6 +400,9 @@ background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040
 .business a{
 background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040d 100%);
 }
+.business{
+border: 1px solid rgba(168, 19, 39);
+}
 .business .inclotodo:hover{
 color: #5b2c83 ;
 transition: color 0,3s;
