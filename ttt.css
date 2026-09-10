@@ -297,7 +297,7 @@ text-align: center;
 background:linear-gradient(135deg, #1a0b2e 0%, #3d1461 25%, #5b2c83 50%, #7d55c7 75%, #bda6f2 100%);
 border: 1px solid #121212;
 }
-.selectBtn{
+#selectBtn{
 width: 250px;
 border-radius: 30px;
 padding: 10px;
@@ -393,6 +393,9 @@ background: linear-gradient(135deg, #d4af37, #aa771c);
 }
 .exclusivo a{
 background: linear-gradient(135deg, #d4af37, #aa771c);
+}
+.exclusivo {
+opacity: 0.8;
 }
 .business .perfilBadgs {
 background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040d 100%);
