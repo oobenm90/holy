@@ -55,8 +55,6 @@ font-size: 15px;
 padding: 10px;
 text-transform: uppercase;
 text-decoration: none;
-backdrop-filter: blur(0.2px);
--webkit-filter: blur(0.2px);
 }
 .colorOffer a:hover{
 background: #cacaca;
@@ -158,6 +156,7 @@ display: none !important;
 #serchView{
 display: flex;
 flex-direction: column;
+background: white;
 font-size: 30px;
 text-align: center;
 align-items: center;
@@ -165,31 +164,34 @@ align-items: center;
 #serch{
 position: fixed;
 width: 90%;
+bottom: 0;
 max-width: 550px;
 box-sizing: border-box;
 padding: 14px 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
-background: #121212;
+background: rgba(18, 18, 18, 0.75);
 color: white;
-margin-bottom: 30px;
+margin-bottom: 65px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+z-index: 1900:
+
 }
 #serch:hover{
 box-shadow: 0 4px 20px rgba(202, 202, 202, 0.4);
 transition: box-shadow 0,3s;
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+z-index: 1500:
 }
-.bus{
-margin: 30px;
-background: #323232;
-border: 1px solid #323232;
-padding: 30px;
-color: white;
-text-transform: capitalize;
-font-size: 40px;
-}  
+
 #serch::placeholder{
 font-size: 18px;
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+z-index: 1900:
 }
 .YYY{ 
 display: flex;
@@ -463,4 +465,21 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 width: 140px;
 color: black;
+}
+.cardsCss{
+margin-bottom: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid  rgba(255, 255, 255, 0.1);
+border-radius: 17px;
+background: #121212;
+color: white;
+padding: 20px;
+text-align: center;
+font-size: 18px;
+width: 250px;
+height: 400px;
+margin: auto;
+box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }

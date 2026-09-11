@@ -41,7 +41,7 @@ const modofil = document.getElementById("modofiltrar");
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
 let cardoffers = offers.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
+	return `<div><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
 perfilView.classList.add("hidden");
 ofertCardsView.classList.remove("hidden");
