@@ -177,7 +177,7 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1900;
-font-size: 16px;
+font-size: 16px !important;
 touch-action: manipulation;
 }
 #serch:hover{
@@ -410,9 +410,6 @@ background: linear-gradient(135deg, #d4af37, #aa771c);
 }
 .exclusivo a{
 background: linear-gradient(135deg, #d4af37, #aa771c);
-}
-.exclusivo {
-opacity: 0.9;
 }
 .business .perfilBadgs {
 background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040d 100%);
