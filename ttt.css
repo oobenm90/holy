@@ -149,7 +149,12 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 }
-
+.siting:active{
+background: #cacaca;
+transition: background 0,3s;
+color: white;
+transition: color 0,3s;
+}
 .hidden{
 display: none !important;
 }
