@@ -189,10 +189,6 @@ z-index: 1900;
 
 #serch::placeholder{
 font-size: 18px;
-background: rgba(18, 18, 18, 0.75);
-backdrop-filter: blur(15px);
--webkit-backdrop-filter: blur(15px);
-z-index: 1900;
 }
 .YYY{ 
 display: flex;
