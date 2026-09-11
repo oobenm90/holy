@@ -495,8 +495,8 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 @media (max-width: 768px){
 .colorOffer{
-width: 90%;
-max-width: 400px;
-margin: 0 auto 20px;
+width: 65%;
+max-width: 350px;
+margin: 10 auto 30px;
 }
 }
