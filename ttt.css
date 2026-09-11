@@ -106,10 +106,10 @@ transition: color 0,3s;
 .profil-nav{
 display: flex;
 justify-content: space-between;
+padding: 15px;
 color: white;
 text-transform: uppercase;
 font-size: 25px;
-padding: 10px;
 }
 #serchInput{
 border: 1px solid #0a0a0a;
@@ -145,7 +145,6 @@ text-transform: uppercase;
 color: white;
 margin-top: 5px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
-
 }
 .siting:hover{
 color: black;
@@ -164,6 +163,7 @@ text-align: center;
 align-items: center;
 }
 #serch{
+position: fixed;
 width: 90%;
 max-width: 550px;
 box-sizing: border-box;
@@ -172,6 +172,7 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 background: #121212;
 color: white;
+margin-bottom: 30px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 #serch:hover{
@@ -179,6 +180,7 @@ box-shadow: 0 4px 20px rgba(202, 202, 202, 0.4);
 transition: box-shadow 0,3s;
 }
 .bus{
+margin: 30px;
 background: #323232;
 border: 1px solid #323232;
 padding: 30px;
