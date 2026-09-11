@@ -185,13 +185,6 @@ z-index: 1900;
 font-size: 16px !important;
 touch-action: manipulation;
 }
-#serch:hover{
-box-shadow: 0 4px 20px rgba(202, 202, 202, 0.4);
-transition: box-shadow 0,3s;
-backdrop-filter: blur(15px);
--webkit-backdrop-filter: blur(15px);
-z-index: 1900;
-}
 
 #serch::placeholder{
 font-size: 18px;
