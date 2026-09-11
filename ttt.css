@@ -177,6 +177,7 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1900;
+font-size: 16px;
 }
 #serch:hover{
 box-shadow: 0 4px 20px rgba(202, 202, 202, 0.4);
@@ -188,6 +189,7 @@ z-index: 1900;
 
 #serch::placeholder{
 font-size: 18px;
+background: rgba(18, 18, 18, 0.75);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1900;
