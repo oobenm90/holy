@@ -134,22 +134,22 @@ padding-top: 8px;
 text-transform: capitalize;
 }
 .siting{
-background: #121212;
+position: fixed;
+right: 5%;
+top: 0;
+background: rgba(18, 18, 18, 0.75);
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 font-size: 20px;
 padding: 10px;
 text-transform: uppercase;
 color: white;
-margin-top: 5px;
+margin-top: 20px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
 }
-.siting:hover{
-color: black;
-transition: color 0,3s;
-background: #cacaca;
-transition: background 0,3s;
-}
+
 .hidden{
 display: none !important;
 }
