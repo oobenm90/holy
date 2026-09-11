@@ -373,6 +373,21 @@ background: #323232;
 color: white;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
+margin-bottom: 1px;
+}
+#buttonCerrar{
+padding: 10px;
+background: #323232;
+color: white;
+border-radius: 30px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+margin: 1px;
+}
+#buttonCerrar:hover{
+background: red;
+transition: background 0,3s;
+color: black;
+transition: color 0,3s;
 }
 #buttonSelect:hover{
 color: black;
@@ -480,3 +495,4 @@ height: 400px;
 margin: auto;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+
