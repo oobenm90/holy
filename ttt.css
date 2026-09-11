@@ -378,8 +378,8 @@ margin-bottom: 1px;
 }
 #buttonCerrar{
 padding: 10px;
-background: #323232;
-color: white;
+background: red;
+color: black;
 border-radius: 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 margin: 1px;
@@ -412,7 +412,7 @@ background: linear-gradient(135deg, #d4af37, #aa771c);
 background: linear-gradient(135deg, #d4af37, #aa771c);
 }
 .exclusivo {
-opacity: 0.8;
+opacity: 0.9;
 }
 .business .perfilBadgs {
 background: linear-gradient(135deg, #2b0307 0%, #720917 40%, #a81327 70%, #4a040d 100%);

@@ -1,4 +1,4 @@
-let planes = [ {tipo: "exclusivo", precio: "0€ / mes", badgname: "perfil basico", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "Exclusivo", link: "https://www.apple.com/es-es"},
+let planes = [ {tipo: "exclusivo", precio: "0€ / mes", badgname: "perfil basico", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
  {tipo: "premium", precio: "24,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"},
  {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"}];
  let plan = planes.map(function(suscription){
