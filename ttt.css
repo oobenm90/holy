@@ -40,7 +40,7 @@ text-transform: capitalize;
 }
 .colorOffer h2{
 text-transform: capitalize;
-min-height: 20px;
+min-height: 29px;
 }
 .colorOffer a{
 background: white;
@@ -184,9 +184,6 @@ touch-action: manipulation;
 }
 #serch input{
 font-size: 16px !important;
-}
-#serch::placeholder{
-font-size: 18px;
 }
 .YYY{ 
 display: flex;
