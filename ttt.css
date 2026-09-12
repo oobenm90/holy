@@ -209,14 +209,13 @@ margin: 15px auto;
 text-transform: uppercase;
 font-size: 18px;
 }
-input,select, textarea{
+input{
 color: white;
 border-radius: 30px;
 width: 280px;
 padding: 10px 5px;
 background-color: #323232;
 border: 1px solid #121212;
-font-size: 16px !important;
 }
 #premiumBtn{
 color: white;
@@ -435,7 +434,7 @@ color: white;
 background: #323232;
 border-radius: 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
-font-size: 5px;
+font-size: 12px;
 }
 #buttonEnviar{
 margin-top: 15px;

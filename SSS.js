@@ -6,32 +6,36 @@ let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil es
 });
 planesCool = document.getElementById("planesCool").innerHTML = plan.join("");
 
-let offers = [{name: "john smith bieber", image: "foto.jpg", oldPrice: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
-{name: "maria lopiz gomez grantia", image: "fotos.jpg", oldPrice: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
-{name: "ahmed benhiba", image: "III.jpg", oldPrice: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
-{name: "mohamed benhiba", image: "hbomax.jpg", oldPrice: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
-{name: "apple", image: "apple.jpg", oldPrice: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
-{name: "disney", image: "dsn.jpg", oldPrice: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
+let offers = [{name: "john smith bieber", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
+{name: "maria lopiz gomez grantia", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
+{name: "ahmed benhiba", image: "III.jpg", servicio: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
+{name: "mohamed benhiba", image: "hbomax.jpg", servicio: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
+{name: "apple", image: "apple.jpg", servicio: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
+{name: "disney", image: "dsn.jpg", servicio: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
 let cardoffers = offers.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
+	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
-let filterResult = [{name: "john smith", image: "foto.jpg", oldPrice: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
-{name: "maria lopiz", image: "fotos.jpg", oldPrice: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
-{name: "ahmed benhiba", image: "III.jpg", oldPrice: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
-{name: "mohamed benhiba", image: "hbomax.jpg", oldPrice: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
-{name: "apple", image: "apple.jpg", oldPrice: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
-{name: "disney", image: "dsn.jpg", oldPrice: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
+let filterResult = [{name: "john smith", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
+{name: "maria lopiz", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
+{name: "ahmed benhiba", image: "III.jpg", servicio: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
+{name: "mohamed benhiba", image: "hbomax.jpg", servicio: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
+{name: "apple", image: "apple.jpg", servicio: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
+{name: "disney", image: "dsn.jpg", servicio: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
 document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 let buttonSelect = document.getElementById("buttonSelect");
 buttonSelect.addEventListener("click", function(){
 let result = document.getElementById("servicioSelect").value;
-let resultados = filterResult.filter(name => name.oldPrice === result);
+let resultados = filterResult.filter(name => name.servicio === result);
 modofil.classList.add("hidden");
 let cardoffers = resultados.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
+	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
 document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 });
+
+
+
+
 const ofertCardsView = document.getElementById("ofertCards");
 const serchLink = document.getElementById("serchLink");
 const serchView = document.getElementById("serchView");
@@ -46,10 +50,6 @@ const modofil = document.getElementById("modofiltrar");
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
-let cardoffers = offers.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
-});
-document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 perfilView.classList.add("hidden");
 ofertCardsView.classList.remove("hidden");
 serchView.classList.remove("hidden");
@@ -59,13 +59,22 @@ serchView.classList.remove("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 });
+    let serch = document.getElementById("serch");
+	serch.addEventListener("input", function(event){
+	let filter = serch.value.toLowerCase();
+	let result = offers.filter(profi => (profi.servicio.toLowerCase().includes(filter)));
+let cardFilter = result.map( function(offer){
+	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
+});
+document.getElementById("ofertCards").innerHTML = cardFilter.join("");
+});
 inicioLink.addEventListener("click", function(event){
 	event.preventDefault();
 let cardoffers = offers.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.oldPrice}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
+	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
 document.getElementById("ofertCards").innerHTML = cardoffers.join("");
-document.getElementById("ofertCards").innerHTML = cardoffers.join("");
+
 	ofertCardsView.classList.remove("hidden");
 	perfilView.classList.add("hidden");
 	serchView.classList.add("hidden");
