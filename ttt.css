@@ -297,7 +297,7 @@ background:linear-gradient(135deg, #1a0b2e 0%, #3d1461 25%, #5b2c83 50%, #7d55c7
 border: 1px solid #121212;
 }
 #selectBtn{
-width: 250px;
+width: 90%;
 border-radius: 30px;
 padding: 10px;
 font-size: 15px;
