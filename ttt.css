@@ -78,7 +78,7 @@ background: rgba(18,18,18, 0.75);
 border-top: 1px solid rgba(255, 255, 255, 0.1);
 text-transform: uppercase;
 color: white;
-padding-bottom: calc(env(safe-area.inset-bottom, 20px) +10px);
+padding-bottom: env(safe-area.inset-bottom);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1000;
