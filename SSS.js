@@ -1,13 +1,13 @@
-let planes = [ {tipo: "exclusivo", precio: "0€ / mes", badgname: "perfil basico", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
- {tipo: "premium", precio: "24,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"},
- {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"}];
+let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil estander", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
+ {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"},
+ {tipo: "premium", precio: "99,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"}];
  let plan = planes.map(function(suscription){
 	 return `<div class="Holabuenas ${suscription.tipo}"><span class="perfilBadgs">${suscription.badgname}</span><h2>${suscription.precio}</h2><hr><p class="inclotodo">-${suscription.inclone}</p><p class="inclotodo">-${suscription.incltwo}</p><p class="inclotodo">-${suscription.incltree}</p><a href="${suscription.link}">Prueba 7 días gratis</a></div>`;
 });
 planesCool = document.getElementById("planesCool").innerHTML = plan.join("");
 
-let offers = [{name: "john smith", image: "foto.jpg", oldPrice: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
-{name: "maria lopiz", image: "fotos.jpg", oldPrice: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
+let offers = [{name: "john smith bieber", image: "foto.jpg", oldPrice: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
+{name: "maria lopiz gomez grantia", image: "fotos.jpg", oldPrice: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
 {name: "ahmed benhiba", image: "III.jpg", oldPrice: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
 {name: "mohamed benhiba", image: "hbomax.jpg", oldPrice: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
 {name: "apple", image: "apple.jpg", oldPrice: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},

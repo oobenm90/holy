@@ -10,7 +10,7 @@ padding: 20px;
 text-align: center;
 font-size: 18px;
 width: 250px;
-height: 400px;
+height: 396px;
 margin: auto;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
@@ -39,12 +39,8 @@ font-weight: 600;
 text-transform: capitalize;
 }
 .colorOffer h2{
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
-text-transform: uppercase;
-min-height: 48px;
+text-transform: capitalize;
+min-height: 35px;
 }
 .colorOffer a{
 background: white;
@@ -403,10 +399,10 @@ background: linear-gradient(135deg, #89939E, #dce3ea, #4b5563);
 
 }
 .premium a{
-background: linear-gradient(135deg, #89939E,#89939E , #4b5563);
+background: linear-gradient(135deg, #89939E, #dce3ea, #4b5563);
 }
 .premium{
-box-shadow: 0 20px 40px rgba(220, 227, 234, 0.6), 0 8px 16px rgba(220, 227, 234, 0.4);
+box-shadow: 0 20px 40px rgba(220, 227, 234, 0.4);
 }
 .exclusivo .perfilBadgs {
 background: linear-gradient(135deg, #d4af37, #aa771c);
@@ -418,9 +414,8 @@ background: #121212;
 background: linear-gradient(135deg, #06150c, #1ed740, #071108);
 }
 .business a{
-background: linear-gradient(135deg, #06150c, #1ed740, #071108);
+background: linear-gradient(135deg, #06150c,#1ed740 , #071108);
 }
-
 .business .inclotodo:hover{
 color: #1ed740 ;
 transition: color 0,3s;
