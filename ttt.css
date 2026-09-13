@@ -467,3 +467,37 @@ height: 400px;
 margin: auto;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
+#sesionBtn{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: auto;
+background: #121212;
+width: 280px;
+border: 1px solid rgba(18, 18, 18, 0.1);
+padding: 10px;
+border: 15px;
+color: white;
+border-radius: 30px;
+}
+
+.sesionCss{
+color: white;
+background: #121212;
+margin: 5px;
+font-size: 20px;
+}
+.holaSesion{
+padding: 10px;
+margin: 10px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 30px;
+color: black;
+background: white;
+width: 89%;
+}
+#inputSesion{
+padding: 15px;
+margin: 5px;
+width: 82%;
+}

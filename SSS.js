@@ -1,3 +1,6 @@
+const SUPABASE_URL = "https://jqttmpwpuiqrjfhhldyu.supabase.co/rest/v1/";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpxdHRtcHdwdWlxcmpmaGhsZHl1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2OTYxMDYsImV4cCI6MjEwNDI3MjEwNn0.DdyTRL0kHeyPOEkT8tv42hRXwD7W8HEC-OyBiRu7OZ4";
+const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil estander", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
  {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"},
  {tipo: "premium", precio: "99,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"}];
@@ -9,7 +12,7 @@ planesCool = document.getElementById("planesCool").innerHTML = plan.join("");
 let offers = [{name: "john smith bieber", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
 {name: "maria lopiz gomez grantia", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
 {name: "ahmed benhiba", image: "III.jpg", servicio: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
-{name: "mohamed benhiba", image: "hbomax.jpg", servicio: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
+{name: "mohamed benhiba fomez boom", image: "hbomax.jpg", servicio: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
 {name: "apple", image: "apple.jpg", servicio: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
 {name: "disney", image: "dsn.jpg", servicio: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
 let cardoffers = offers.map( function(offer){
@@ -47,6 +50,8 @@ const buenas = document.getElementById("buenas");
 const premiumBtn = document.getElementById("premiumBtn");
 const planesCools = document.getElementById("planesCool");
 const modofil = document.getElementById("modofiltrar");
+const sesionBtn = document.getElementById("sesionBtn");
+
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -62,7 +67,9 @@ serchView.classList.remove("hidden");
     let serch = document.getElementById("serch");
 	serch.addEventListener("input", function(event){
 	let filter = serch.value.toLowerCase();
-	let result = offers.filter(profi => (profi.servicio.toLowerCase().includes(filter)));
+	let result = offers.filter(profi => (profi.servicio.toLowerCase().includes(filter)) ||
+	(profi.newPrice.toLowerCase().includes(filter)) ||
+	(profi.name.toLowerCase().includes(filter)));
 let cardFilter = result.map( function(offer){
 	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
@@ -90,12 +97,13 @@ perfilLink.addEventListener("click", function(event){
 	event.preventDefault();
 	ofertCardsView.classList.add("hidden");
 	serchView.classList.add("hidden");
-	perfilView.classList.remove("hidden");
+	perfilView.classList.add("hidden");
 	hola.classList.add("hidden");
 	buenas.classList.remove("hidden");
-	premiumBtn.classList.remove("hidden");
+	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
+	sesionBtn.classList.remove("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
@@ -113,4 +121,13 @@ hola.addEventListener("click", function() {
 let buttonCerrar = document.getElementById("buttonCerrar");
 buttonCerrar.addEventListener("click", function(){
 	modofil.classList.add("hidden");
+});
+let googleBtn = document.getElementById("googleLoginBtn");
+googleBtn.addEventListener("click", async() => {
+ await db.auth.signInWithOAuth({
+		provider: 'google',
+		options: {
+			redirectTo: window.location.origin
+		}
+	});
 });
