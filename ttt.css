@@ -12,9 +12,11 @@ text-align: center;
 max-width: 280px;
 font-size: 17px;
 margin: auto;
-width: 250px;
+width: 100%;
+max-width: 400px;
 height: 396px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
+box-sizing: border-box;
 }
 .FFF{
 width: 150px;
@@ -530,6 +532,12 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 768px){
 body{
-zoom: 85%;
+padding: 16px;
+align-items: flex-start;
 }
+.colorOffer{
+width: 100%;
+max-width: 100%;
+padding: 20px;
+margin-top: 20px;
 }
