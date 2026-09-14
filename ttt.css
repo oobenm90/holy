@@ -529,6 +529,7 @@ color: white;
 border: 1px solid rgba(255, 255, 255, 0.1);
 }
 @media (max-width: 768px){
-transform: scale(0.85);
-transform-origin: top left;
+body{
+zoom: 85%;
+}
 }
