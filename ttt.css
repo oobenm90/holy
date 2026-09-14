@@ -12,7 +12,7 @@ text-align: center;
 max-width: 280px;
 font-size: 17px;
 margin: auto;
-width: 80%;
+width: 280px;
 max-width: 400px;
 height: 396px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -540,4 +540,5 @@ width: 80% !important;
 max-width: 100% !important;
 padding: 20px;
 margin-top: 20px;
+margin: 20px;
 }
