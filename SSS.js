@@ -9,14 +9,14 @@ let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil es
 });
 planesCool = document.getElementById("planesCool").innerHTML = plan.join("");
 
-let offers = [{name: "john smith bieber", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
-{name: "maria lopiz gomez grantia", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
+let offers = [{name: "john smith bieber", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", tipoServicio: "en local", link: "https://wa.me/34635188642"},
+{name: "maria lopiz gomez grantia", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", tipoServicio: "a domiclio", link: "https://Www.netflix.com/inicio"},
 {name: "ahmed benhiba", image: "III.jpg", servicio: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
 {name: "mohamed benhiba fomez boom", image: "hbomax.jpg", servicio: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
 {name: "apple", image: "apple.jpg", servicio: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
 {name: "disney", image: "dsn.jpg", servicio: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
 let cardoffers = offers.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p> <a href ="${offer.link}">contactar</a></div>`;
+	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p><p class="servicio">${offer.tipoServicio}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
 let filterResult = [{name: "john smith", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
 {name: "maria lopiz", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},

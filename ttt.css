@@ -1,4 +1,5 @@
 .colorOffer{
+position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -513,4 +514,17 @@ text-align: center;
 strong{
 color: #1ed740;
 border-bottom: #1ed740;
+}
+.servicio{
+text-transform: capitalize;
+position: absolute;
+top: 0;
+right: 0;
+margin-top: 0;
+border-radius: 0px 17px 0px 17px;
+font-size: 12px;
+padding: 5px 25px;
+background: #323232;
+color: white;
+border: 1px solid rgba(255, 255, 255, 0.1);
 }
