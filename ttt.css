@@ -20,7 +20,7 @@ width: 150px;
 height: 150px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 17px;
-margin: 10px;
+margin: 5px;
 object-position: center-top;
 }
 .FFF:hover{
@@ -33,6 +33,7 @@ font-family:"Barlow Semi Condensed", sans-serif;
 }
 .newPrice{
 text-transform: capitalize;
+margin-top: 8px;
 }
 .colorOffer h2{
 text-transform: capitalize;
@@ -58,8 +59,9 @@ border: 1px solid #323232;
 transition: border 0,3s;
 }
 .oldPrice{
-text-transform: capitlize;
+text-transform: capitalize;
 color: white;
+margin-top: 5px;
 }
 #ofertCards{
 display: grid;
