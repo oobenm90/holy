@@ -97,13 +97,13 @@ perfilLink.addEventListener("click", function(event){
 	event.preventDefault();
 	ofertCardsView.classList.add("hidden");
 	serchView.classList.add("hidden");
-	perfilView.classList.add("hidden");
+	perfilView.classList.remove("hidden");
 	hola.classList.add("hidden");
 	buenas.classList.add("hidden");
 	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
-	sesionBtn.classList.remove("hidden");
+	sesionBtn.classList.add("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
@@ -130,4 +130,12 @@ googleBtn.addEventListener("click", async() => {
 			redirectTo: window.location.origin
 		}
 	});
+});
+let cancelarBtn = document.getElementById("cancelarBtn");
+cancelarBtn.addEventListener("click", function(){
+	perfilView.classList.add("hidden");
+	serchView.classList.add("hidden");
+	ofertCardsView.classList.add("hidden");
+	planesCools.classList.add("hidden");
+	cancelar.classList.remove("hidden");
 });

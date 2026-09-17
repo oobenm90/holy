@@ -530,14 +530,26 @@ background: #323232;
 color: white;
 border: 1px solid rgba(255, 255, 255, 0.1);
 }
-@media (max-width: 768px){
-body{
-padding: 16px;
-align-items: flex-start;
+#cancelar{
+text-align: center;
+color: white;
+font-size: 20px
 }
-.colorOffer{
-width: 70% !important;
-max-width: 100% !important;
-margin-top: 20px;
-margin: 25px;
+.cancelar{
+background: #8b0000;
+font-size: 25px;
+color: white;
+
 }
+.canBtn{
+background: #8b0000;
+color: black;
+padding: 10px;
+border: 1px solid #8b0000;
+}
+.backBtn{
+background: #121212;
+color: white;
+border-radius: 30px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+padding: 10px;

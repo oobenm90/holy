@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="ttt.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="profil-nav">
@@ -11,6 +14,13 @@
 	<button id="hola" class="siting" type="button">filtrar</button>
 	<a href="#" id="premiumBtn" class="hidden">mejorar</a>
 	</div>
+	<div id="cancelar" class="hidden">
+		<h2> tu forma de tarjeta va a cambiar</h2>
+		<p >si canceles la suscripción, cambiarás a nuestro plan gratuito <span class="cancelar">de inmediato</span> y perderás el acceso a todas las ventajas para suscriptores.</p>
+		<p>-la pérdida de tu primer puesto en barcelona esta semana significa la pérdida potencial de 5 nuevos clientes con u valor estimado de 1500€</p>
+		<button class="backBtn" type="button">volver al inicio</button>
+		<button class="canBtn" type="button">cancelar de inmediato</button>
+		</div>
 	<nav>
 		<div class="links-nav">
 			<a href="#" id="inicioLink">inicio</a>
@@ -120,8 +130,10 @@ required
 <button id="buttonEnviar" type="submit">crear</button>
 
 </div>
+
 </div>
 <button type="button" id="buttonCrear" class="hidden">crear</button>
+<button type="button" id="cancelarBtn">cancela suscripión</button>
 <hr>
 	<footer>
 		<p>&copy;2027 Semphony SL</p>
