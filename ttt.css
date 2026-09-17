@@ -533,17 +533,18 @@ border: 1px solid rgba(255, 255, 255, 0.1);
 #cancelar{
 text-align: center;
 color: white;
-font-size: 20px
+font-size: 25px
 }
 .cancelar{
 background: #8b0000;
-font-size: 25px;
+font-size: 20px;
 color: white;
 
 }
 .canBtn{
+font-size: 20px;
 background: #8b0000;
-color: black;
+color: white;
 padding: 10px;
 border: 1px solid #8b0000;
 }
