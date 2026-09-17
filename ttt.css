@@ -542,7 +542,7 @@ color: white;
 
 }
 .canBtn{
-
+opacity: 0.4;
 background: #8b0000;
 color: white;
 padding: 10px;
