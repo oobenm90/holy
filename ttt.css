@@ -12,8 +12,8 @@ text-align: center;
 max-width: 230px;
 font-size: 15px;
 margin: auto;
-width: 225px;
-max-width: 225px;
+width: 215px;
+max-width: 215px;
 height: 300px;
 min-height: 300px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -544,11 +544,12 @@ color: white;
 
 }
 .canBtn{
-opacity: 0.4;
+opacity: 0.9;
 background: #8b0000;
 color: white;
 padding: 10px;
 border: 1px solid #8b0000;
+font-size: 15px;
 }
 .backBtn{
 background: #121212;
@@ -556,7 +557,7 @@ color: white;
 border-radius: 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 padding: 10px;
-font-size: 20px;
+font-size: 15px;
 }
 .euro{
 background: #1ed740;
