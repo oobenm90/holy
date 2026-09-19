@@ -51,6 +51,7 @@ const premiumBtn = document.getElementById("premiumBtn");
 const planesCools = document.getElementById("planesCool");
 const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
+const hidden = document.getElementById("links-nav");
 
 
 serchLink.addEventListener("click", function(event){
@@ -67,6 +68,7 @@ serchView.classList.remove("hidden");
 });
     let serch = document.getElementById("serch");
 	serch.addEventListener("input", function(event){
+	hidden.classList.add("hidden");
 	let filter = serch.value.toLowerCase();
 	let result = offers.filter(profi => (profi.servicio.toLowerCase().includes(filter)) ||
 	(profi.newPrice.toLowerCase().includes(filter)) ||
