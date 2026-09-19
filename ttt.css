@@ -193,7 +193,8 @@ backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1900;
 font-size: 16px !important;
-touch-action: manipulation;
+transform: scale(0.9);
+transform: center center;
 }
 #serch input{
 font-size: 16px !important;
