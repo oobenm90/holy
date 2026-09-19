@@ -94,6 +94,7 @@ document.getElementById("ofertCards").innerHTML = cardoffers.join("");
     planesCools.classList.add("hidden");
     modofil.classList.add("hidden");
     cancelar.classList.add("hidden");
+
   
 });
 	
@@ -109,6 +110,7 @@ perfilLink.addEventListener("click", function(event){
 	modofil.classList.add("hidden");
 	sesionBtn.classList.add("hidden");
 	cancelar.classList.add("hidden");
+	hidden.classList.remove("hidden")
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
