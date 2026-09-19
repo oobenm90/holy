@@ -1,6 +1,8 @@
 .colorOffer{
 position: relative;
 display: flex;
+flex: 0 0 auto;
+contain: layout paint style !important;
 flex-direction: column;
 align-items: center;
 border: 1px solid  rgba(255, 255, 255, 0.1);
@@ -13,7 +15,7 @@ max-width: 230px;
 font-size: 15px;
 margin: auto;
 width: 215px;
-max-width: 215px;
+max-width: 100%;
 height: 300px;
 min-height: 300px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
