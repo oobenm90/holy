@@ -40,10 +40,11 @@ font-family:"Barlow Semi Condensed", sans-serif;
 }
 .newPrice{
 text-transform: capitalize;
-margin-top: 8px;
 }
 .colorOffer h2{
 text-transform: capitalize;
+max-height: 29px;
+
 }
 .colorOffer a{
 display: flex;
@@ -147,7 +148,7 @@ text-transform: capitalize;
 }
 .siting{
 position: fixed;
-right: 5%;
+right: 0;
 top: 0;
 background: rgba(18, 18, 18, 0.75);
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -354,11 +355,11 @@ color: linear-gradient(135deg, #89939E, #dce3ea, #4b5563);
 position: fixed;
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-top: 50%;
+justify-content: center;
+align-items: center;
 left: 50%;
+top: 50%;
 transform: translate(-50%, -50%);
-z-index: 999;
 background: rgba(18,18,18, 0.75);
 padding: 15px;
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -367,8 +368,6 @@ height: 340px;
 border-radius: 17px;
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
-transform: scale(0.9);
-transform: center center;
 z-index: 9999;
 }
 .ciudadSelect{
@@ -380,12 +379,14 @@ margin: 5px;
 .servicioSelect{
 color: white;
 font-size: 12px;
+width: 20px;
 text-align: center;
 margin: 15px;
 }
 #buttonSelect{
 margin-top: auto;
 padding: 10px;
+width: 200px;
 background: #323232;
 color: white;
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -396,6 +397,7 @@ margin-bottom: 1px;
 padding: 10px;
 background: #323232;
 color: white;
+width: 200px;
 border-radius: 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 margin: 1px;
@@ -449,7 +451,7 @@ width: 280px;
 justify-content: center;
 }
 .selectCss{
-width: 250px;
+width: 200px;
 padding: 10px;
 color: white;
 background: #323232;
@@ -459,7 +461,7 @@ font-size: 12px;
 }
 #buttonEnviar{
 margin-top: 15px;
-width: 260px;
+width: 250px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 padding: 10px;
@@ -545,12 +547,12 @@ position: absolute;
 top: 0;
 right: 0;
 margin-top: 0;
-border-radius: 0px 17px 0px 17px;
+border-radius: 0px 5px 0px 17px;
 font-size: 12px;
 padding: 5px 25px;
-background: #121212;
+background: #323232;
 color: white;
-border: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 #cancelar{
 text-align: center;
