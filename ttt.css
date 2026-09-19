@@ -74,7 +74,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 28px;
 }
-#nav{
+#hiddenNav{
 position: fixed;
 width: 100%;
 left: 0;
@@ -88,7 +88,7 @@ backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1200;
 }
-.hed-nav{
+#hiddenNav .hid-nav{
 display: hidden !important;
 }
 .links-nav{

@@ -51,7 +51,7 @@ const premiumBtn = document.getElementById("premiumBtn");
 const planesCools = document.getElementById("planesCool");
 const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
-const nav = document.getElementById("nav");
+let nav = document.getElementById("heddenNav");
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -65,7 +65,9 @@ serchView.classList.remove("hidden");
 	modofil.classList.add("hidden");
 	cancelar.classList.add("hidden");
 });
-    let serch = document.getElementById("serch");
+let serch = document.getElementById("serch");
+
+    
 	serch.addEventListener("input", function(event){
 	let filter = serch.value.toLowerCase();
 	let result = offers.filter(profi => (profi.servicio.toLowerCase().includes(filter)) ||
@@ -77,10 +79,10 @@ let cardFilter = result.map( function(offer){
 document.getElementById("ofertCards").innerHTML = cardFilter.join("");
 });
 serch.addEventListener('focus', () =>{
-	nav.classList.add("hed-nav");
+	nav.classList.add("hid-nav");
 });
 serch.addEventListener('blur', () => {
-	nav.classList.remove("hed-nav");
+	nav.classList.remove("hid-nav");
 });
 inicioLink.addEventListener("click", function(event){
 	event.preventDefault();
