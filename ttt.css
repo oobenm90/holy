@@ -87,6 +87,8 @@ padding-bottom: env(safe-area.inset-bottom);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1200;
+transform: scale(0.9);
+transform: center center;
 }
 #hiddenNav .hid-nav{
 display: hidden !important;
