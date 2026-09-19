@@ -498,6 +498,8 @@ padding: 10px;
 border: 15px;
 color: white;
 border-radius: 30px;
+transform: scale(0.9);
+transform: center center ;
 }
 
 .sesionCss{
@@ -549,7 +551,7 @@ font-size: 25px
 }
 .cancelar{
 background: #8b0000;
-font-size: 20px;
+font-size: 28px;
 color: white;
 
 }
