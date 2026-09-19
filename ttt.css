@@ -549,7 +549,7 @@ background: #8b0000;
 color: white;
 padding: 10px;
 border: 1px solid #8b0000;
-font-size: 15px;
+font-size: 13px;
 }
 .backBtn{
 background: #121212;
@@ -557,7 +557,7 @@ color: white;
 border-radius: 30px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 padding: 10px;
-font-size: 15px;
+font-size: 13px;
 }
 .euro{
 background: #1ed740;
