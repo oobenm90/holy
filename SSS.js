@@ -63,6 +63,7 @@ serchView.classList.remove("hidden");
 	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
+	cancelar.classList.add("hidden");
 });
     let serch = document.getElementById("serch");
 	serch.addEventListener("input", function(event){
@@ -90,6 +91,7 @@ document.getElementById("ofertCards").innerHTML = cardoffers.join("");
     premiumBtn.classList.add("hidden");
     planesCools.classList.add("hidden");
     modofil.classList.add("hidden");
+    cancelar.classList.add("hidden");
   
 });
 	
@@ -104,6 +106,7 @@ perfilLink.addEventListener("click", function(event){
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 	sesionBtn.classList.add("hidden");
+	cancelar.classList.add("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
@@ -138,4 +141,8 @@ cancelarBtn.addEventListener("click", function(){
 	ofertCardsView.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	cancelar.classList.remove("hidden");
+	buenas.classList.add("hidden");
+	hola.classList.add("hidden");
+	cancelarBtn.classList.add("hidden");
+	modofil.classList.add("hidden");
 });
