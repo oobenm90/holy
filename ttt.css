@@ -74,7 +74,7 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 28px;
 }
-nav{
+#nav{
 position: fixed;
 width: 100%;
 left: 0;
@@ -88,18 +88,21 @@ backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1200;
 }
-#links-nav{
+.hed-nav{
+display: hidden !important;
+}
+.links-nav{
 display: flex;
 justify-content: space-between;
 font-size: 20px;
 }
-#links-nav a{
+.links-nav a{
 padding: 15px;
 color: white;
 text-decoration: none;
 text-transform: uppercase;
 }
-#links-nav a:hover{
+.links-nav a:hover{
 color: #cacaca;
 transition: color 0,3s;
 transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease; cursor: pointer;

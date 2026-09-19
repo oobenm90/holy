@@ -51,8 +51,7 @@ const premiumBtn = document.getElementById("premiumBtn");
 const planesCools = document.getElementById("planesCool");
 const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
-const hidden = document.getElementById("links-nav");
-
+const nav = document.getElementById("nav");
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -68,7 +67,6 @@ serchView.classList.remove("hidden");
 });
     let serch = document.getElementById("serch");
 	serch.addEventListener("input", function(event){
-	hidden.classList.add("hidden");
 	let filter = serch.value.toLowerCase();
 	let result = offers.filter(profi => (profi.servicio.toLowerCase().includes(filter)) ||
 	(profi.newPrice.toLowerCase().includes(filter)) ||
@@ -78,6 +76,12 @@ let cardFilter = result.map( function(offer){
 });
 document.getElementById("ofertCards").innerHTML = cardFilter.join("");
 });
+serch.addEventListener('focus', () =>{
+	nav.classList.add("hed-nav");
+});
+serch.addEventListener('blur', () => {
+	nav.classList.remove("hed-nav");
+});
 inicioLink.addEventListener("click", function(event){
 	event.preventDefault();
 let cardoffers = offers.map( function(offer){
@@ -85,6 +89,7 @@ let cardoffers = offers.map( function(offer){
 });
 document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 
+    nav.classList.remove("hidden");
 	ofertCardsView.classList.remove("hidden");
 	perfilView.classList.add("hidden");
 	serchView.classList.add("hidden");
@@ -94,7 +99,7 @@ document.getElementById("ofertCards").innerHTML = cardoffers.join("");
     planesCools.classList.add("hidden");
     modofil.classList.add("hidden");
     cancelar.classList.add("hidden");
-
+   
   
 });
 	
@@ -110,7 +115,6 @@ perfilLink.addEventListener("click", function(event){
 	modofil.classList.add("hidden");
 	sesionBtn.classList.add("hidden");
 	cancelar.classList.add("hidden");
-	hidden.classList.remove("hidden")
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
