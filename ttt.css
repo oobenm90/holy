@@ -90,7 +90,7 @@ border-top: 1px solid rgba(255, 255, 255, 0.1);
 text-transform: uppercase;
 color: white;
 width: 100%;
-padding-bottom: max(env(safe-area-inset-bottom), 15px); 
+padding-bottom: calc(15px + env(safe-area-inset-bottom)); 
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 9999;
