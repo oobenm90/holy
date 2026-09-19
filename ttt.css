@@ -1,7 +1,7 @@
 .colorOffer{
 position: relative;
-display: flex;
-flex: 0 0 auto;
+-webkit-display: flex !important;
+flex: 0 0 auto !important;
 contain: layout paint style !important;
 flex-direction: column;
 align-items: center;
