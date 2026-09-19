@@ -78,12 +78,7 @@ let cardFilter = result.map( function(offer){
 });
 document.getElementById("ofertCards").innerHTML = cardFilter.join("");
 });
-serch.addEventListener('focus', () =>{
-	nav.classList.add("hid-nav");
-});
-serch.addEventListener('blur', () => {
-	nav.classList.remove("hid-nav");
-});
+
 inicioLink.addEventListener("click", function(event){
 	event.preventDefault();
 let cardoffers = offers.map( function(offer){
@@ -91,7 +86,7 @@ let cardoffers = offers.map( function(offer){
 });
 document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 
-    nav.classList.remove("hidden");
+   
 	ofertCardsView.classList.remove("hidden");
 	perfilView.classList.add("hidden");
 	serchView.classList.add("hidden");
