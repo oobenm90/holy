@@ -152,7 +152,7 @@ googleLoginBtn.addEventListener("click", async () => {
 const  {data, error} = await db.auth.signInWithOAuth({
 		provider: "google",
 		options: {
-			redirectTo: "http://localhost:3000"
+			redirectTo: "https://oobenm90.github.io/holy"
 }
 });
 });
