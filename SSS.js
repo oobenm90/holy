@@ -1,6 +1,4 @@
-const SUPABASE_URL = "https://jqttmpwpuiqrjfhhldyu.supabase.co/rest/v1/";
-const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpxdHRtcHdwdWlxcmpmaGhsZHl1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2OTYxMDYsImV4cCI6MjEwNDI3MjEwNn0.DdyTRL0kHeyPOEkT8tv42hRXwD7W8HEC-OyBiRu7OZ4";
-const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
 let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil estander", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
  {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"},
  {tipo: "premium", precio: "99,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"}];
@@ -51,7 +49,8 @@ const premiumBtn = document.getElementById("premiumBtn");
 const planesCools = document.getElementById("planesCool");
 const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
-
+const Btnsesion = document.getElementById("Btnsesion");
+const optSMS = document.getElementById("otpSMS");
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -130,15 +129,6 @@ let buttonCerrar = document.getElementById("buttonCerrar");
 buttonCerrar.addEventListener("click", function(){
 	modofil.classList.add("hidden");
 });
-let googleBtn = document.getElementById("googleLoginBtn");
-googleBtn.addEventListener("click", async() => {
- await db.auth.signInWithOAuth({
-		provider: 'google',
-		options: {
-			redirectTo: window.location.origin
-		}
-	});
-});
 let cancelarBtn = document.getElementById("cancelarBtn");
 cancelarBtn.addEventListener("click", function(){
 	perfilView.classList.add("hidden");
@@ -151,3 +141,8 @@ cancelarBtn.addEventListener("click", function(){
 	cancelarBtn.classList.add("hidden");
 	modofil.classList.add("hidden");
 });
+Btnsesion.addEventListener("click", function(){
+	sesionBtn.classList.add("hidden");
+	optSMS.classList.remove("hidden");
+});
+	

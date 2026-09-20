@@ -588,3 +588,17 @@ background: #1ed740;
 transform: scale(0.9);
 transform-origin: center center;
 }
+#otpSMS{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+#holaOtp{
+padding: 10px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 30px;
+background: white;
+color: black;
+width: 200px;
+margin: auto;
+}
