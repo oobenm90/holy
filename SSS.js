@@ -1,4 +1,6 @@
-
+const supabase_url = "https://jqttmpwpuiqrjfhhldyu.supabase.co";
+const supabase_anonKey = "sb_publishable_xb2J3l5ypfLbYMr_1pi9fg_Bx2WHzgx";
+ const db = supabase.createClient(supabase_url, supabase_anonKey);
 let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil estander", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
  {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"},
  {tipo: "premium", precio: "99,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"}];
@@ -145,4 +147,12 @@ Btnsesion.addEventListener("click", function(){
 	sesionBtn.classList.add("hidden");
 	optSMS.classList.remove("hidden");
 });
-	
+googleLoginBtn = document.getElementById("googleLoginBtn");
+googleLoginBtn.addEventListener("click", async () => {
+const  {data, error} = await db.auth.signInWithOAuth({
+		provider: "google",
+		options: {
+			redirectTo: window.location.origin
+}
+});
+});
