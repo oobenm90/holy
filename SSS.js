@@ -156,3 +156,13 @@ const  {data, error} = await db.auth.signInWithOAuth({
 }
 });
 });
+async function checkUser() {
+	const {data: {user} } = await db.auth.getUser();
+		if(user){
+			perfilView.classList.remove("hidden");
+			sesionBtn.classList.add("hidden");
+		}else{
+			sesionBtn.classList.remove("hidden");
+		};
+	};
+checkUser();
