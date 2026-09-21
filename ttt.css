@@ -73,14 +73,6 @@ transition: transform .12s ease;
 .colorOffer a:active{
 transform: scale(0.97);
 }
-.colorOffer a:hover{
-background: #cacaca;
-transition: background 0,3s;
-color: white;
-transition: color 0,3s;
-border: 1px solid #323232;
-transition: border 0,3s;
-}
 .oldPrice{
 text-transform: capitalize;
 color: white;
