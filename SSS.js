@@ -53,6 +53,7 @@ const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
 const Btnsesion = document.getElementById("Btnsesion");
 const optSMS = document.getElementById("otpSMS");
+const bien = document.getElementById("bien");
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -65,6 +66,7 @@ serchView.classList.remove("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 	cancelar.classList.add("hidden");
+	sesionBtn.classList.add("hidden");
 });
 let serch = document.getElementById("serch");
 
@@ -97,6 +99,7 @@ document.getElementById("ofertCards").innerHTML = cardoffers.join("");
     planesCools.classList.add("hidden");
     modofil.classList.add("hidden");
     cancelar.classList.add("hidden");
+    sesionBtn.classList.add("hidden");
    
   
 });
@@ -113,6 +116,7 @@ perfilLink.addEventListener("click", function(event){
 	modofil.classList.add("hidden");
 	sesionBtn.classList.remove("hidden");
 	cancelar.classList.add("hidden");
+	bien.classList.add("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
