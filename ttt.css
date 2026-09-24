@@ -503,22 +503,23 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin: auto;
-background: #121212;
-width: 280px;
+background: #323232;
 border: 1px solid rgba(18, 18, 18, 0.1);
 padding: 10px;
 border: 15px;
 color: white;
 border-radius: 30px;
 transform: scale(0.9);
-transform: center center ;
+transform: center center;
+
 }
 
 .sesionCss{
 color: white;
-background: #121212;
+background: #323232;
 margin: 5px;
-font-size: 20px;
+font-size: 25px;
+border: 1px solid #323232;
 }
 .holaSesion{
 padding: 10px;
@@ -531,8 +532,8 @@ width: 89%;
 }
 #inputSesion{
 padding: 15px;
+background: #121212;
 margin: 5px;
-width: 82%;
 }
 h3{
 font-size: 25px;
