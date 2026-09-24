@@ -158,11 +158,16 @@ const  {data, error} = await db.auth.signInWithOAuth({
 });
 async function checkUser() {
 	const {data: {user} } = await db.auth.getUser();
+	const hiddenSession = document.getElementById("sesionBtn");
+	const hiddenPerfil = document.getElementById("perfilView");
 		if(user){
-			perfilView.classList.remove("hidden");
-			sesionBtn.classList.add("hidden");
+			let sesionLink = document.getElementById("perfilLink");
+			sesionLink.addEventListener("click", function(){
+			hiddenPrefil.classList.remove("hidden");
+		});
 		}else{
-			sesionBtn.classList.remove("hidden");
+			hiddenSession.classList.add("hidden");
 		};
 	};
 checkUser();
+db.auth.getSession().then(res => console.log(res));
