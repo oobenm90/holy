@@ -111,7 +111,7 @@ perfilLink.addEventListener("click", function(event){
 	perfilView.classList.add("hidden");
 	hola.classList.add("hidden");
 	buenas.classList.add("hidden");
-	premiumBtn.classList.add("hidden");
+	premiumBtn.classList.remove("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 	sesionBtn.classList.remove("hidden");
@@ -155,9 +155,6 @@ googleLoginBtn = document.getElementById("googleLoginBtn");
 googleLoginBtn.addEventListener("click", async () => {
 const  {data, error} = await db.auth.signInWithOAuth({
 		provider: "google",
-		options: {
-			redirectTo: "https://oobenm90.github.io/holy"
-}
 });
 });
 async function checkUser() {
@@ -165,8 +162,8 @@ async function checkUser() {
 	const hiddenSession = document.getElementById("sesionBtn");
 	const hiddenPerfil = document.getElementById("perfilView");
 		if(user){
-			let sesionLink = document.getElementById("perfilLink");
-			sesionLink.addEventListener("click", function(){
+			let sesionnLink = document.getElementById("perfilLink");
+			sesionnLink.addEventListener("click", function(){
 			hiddenPrefil.classList.remove("hidden");
 		});
 		}else{
