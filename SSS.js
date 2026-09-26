@@ -111,7 +111,7 @@ perfilLink.addEventListener("click", function(event){
 	perfilView.classList.add("hidden");
 	hola.classList.add("hidden");
 	buenas.classList.add("hidden");
-	premiumBtn.classList.remove("hidden");
+	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 	sesionBtn.classList.remove("hidden");
