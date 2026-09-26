@@ -511,6 +511,7 @@ color: white;
 border-radius: 30px;
 transform: scale(0.9);
 transform: center center;
+margin-top: 170px;
 
 }
 
@@ -607,8 +608,23 @@ color: black;
 width: 200px;
 margin: auto;
 }
-svg{
-width: 400px;
-height: 200px;
-
+#logo{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+max-width: 350px;
+background: transparent !important;
+border: none !important;
+margin: 0 auto 20px;
+}
+#logo svg{
+position: fixed;
+width: 440px !important;
+margin: auto;
+margin-top: 120px;
+margin-right: 10px;
+height: auto !important;
+display: block !important;
 }

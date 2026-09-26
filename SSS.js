@@ -54,6 +54,7 @@ const sesionBtn = document.getElementById("sesionBtn");
 const Btnsesion = document.getElementById("Btnsesion");
 const optSMS = document.getElementById("otpSMS");
 const bien = document.getElementById("bien");
+let logo = document.getElementById("logo");
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -117,6 +118,7 @@ perfilLink.addEventListener("click", function(event){
 	sesionBtn.classList.remove("hidden");
 	cancelar.classList.add("hidden");
 	bien.classList.add("hidden");
+	logo.classList.remove("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
