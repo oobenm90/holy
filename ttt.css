@@ -1,7 +1,7 @@
 .colorOffer{
 position: relative;
--webkit-display: flex !important;
-contain: layout paint style !important;
+-webkit-display: flex ;
+contain: layout paint style;
 flex-direction: column;
 align-items: center;
 border: 1px solid  rgba(255, 255, 255, 0.1);
@@ -18,7 +18,7 @@ height: 340px;
 min-height: 300px;
 box-shadow: 0 0 6px rgba(30, 215, 64, 0.35), 0 0 18px rgba(30, 215, 64, 0.22), 0 0 40px rgba(30, 215, 64, 0.16), 0 0 80px rgba(30, 215, 64, 0.10), 0 0 140px rgba(30, 215, 64, 0.06);
 box-sizing: border-box !important;
-z-index: 1100;
+z-index: 1000;
 transform: scale(0.9);
 transform-origin: center center;
 }
@@ -165,7 +165,7 @@ backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1200;
 transform: scale(0.9);
-transform-origin: center center;
+transform: center center;
 }
 .siting:active{
 background: #cacaca;
@@ -518,8 +518,9 @@ transform: center center;
 color: white;
 background: #323232;
 margin: 5px;
-font-size: 25px;
+font-size: 20px;
 border: 1px solid #323232;
+font-family: "Barlow Semi Condensed", sans-serif;
 }
 .holaSesion{
 padding: 10px;
@@ -527,8 +528,10 @@ margin: 10px;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 30px;
 color: black;
-background: white;
 width: 89%;
+background: white;
+font-size: 17px;
+font-family: "Barlow Semi Condensed", sans-serif;
 }
 #inputSesion{
 padding: 15px;
