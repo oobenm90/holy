@@ -502,16 +502,16 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: auto;
-background: #323232;
-border: 1px solid rgba(18, 18, 18, 0.1);
+background: rgba(18,18,18, 0.75);
+border: 1px solid rgba(255, 255, 255, 0.1);
 padding: 10px;
-border: 15px;
 color: white;
 border-radius: 30px;
 transform: scale(0.9);
 transform: center center;
-margin-top: 170px;
+margin: auto;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
 
 }
 
@@ -613,15 +613,13 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%;
-max-width: 350px;
 background: transparent !important;
 border: none !important;
 margin: 0 auto 20px;
 }
 #logo svg{
 position: fixed;
-width: 440px !important;
+width: 500px !important;
 margin: auto;
 margin-top: 120px;
 margin-right: 10px;
