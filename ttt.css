@@ -123,6 +123,7 @@ padding: 15px;
 color: white;
 text-transform: uppercase;
 font-size: 25px;
+margin: 0;
 }
 #serchInput{
 border: 1px solid #0a0a0a;
@@ -144,11 +145,9 @@ font-size: 15px;
 padding: 10px;
 }
 img{
-width: 130px;
+width: 180px;
 height: auto;
-padding: 0;
-margin: 0;
-margin-left: auto;
+margin-right: auto;
 }
 .siting{
 position: fixed;
@@ -161,7 +160,7 @@ font-size: 20px;
 padding: 10px;
 text-transform: uppercase;
 color: white;
-margin-top: 33px;
+margin-top: 45px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
