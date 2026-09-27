@@ -44,6 +44,7 @@ transition: box-shadow 0,3s;
 body{ 
 background: #323232;
 font-family: "jost", sans-serif;
+letter-spacing: 1.5px;
 }
 .newPrice{
 text-transform: capitalize;
@@ -68,6 +69,7 @@ border-radius: 30px;
 font-size: 15px;
 margin-bottom: 25px;
 font-family: "jost", sans-serif;
+letter-spacing: 1.5px;
 text-decoration: none;
 transition: transform .12s ease;
 }
@@ -155,6 +157,8 @@ border-radius: 30px;
 font-size: 20px;
 padding: 10px;
 text-transform: uppercase;
+font-family: "jost", sans serif;
+letter-spacing: 1.5px;
 color: white;
 margin-top: 29px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -521,6 +525,7 @@ width: 89%;
 background: white;
 font-size: 17px;
 font-family: "jost", sans-serif;
+letter-spacing: 1.5px;
 }
 #inputSesion{
 padding: 15px;
