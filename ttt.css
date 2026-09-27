@@ -43,15 +43,16 @@ transition: box-shadow 0,3s;
 }
 body{ 
 background: #323232;
-font-family: "Barlow Semi Condensed", sans-serif;
+font-family: "jost", sans-serif;
 }
 .newPrice{
 text-transform: capitalize;
 }
 .colorOffer h2{
-font-family: "Barlow Semi Condensed", sans-serif;
-
-max-height: 29px;
+font-family: "jost", sans-serif;
+font-size: 20px;
+text-transform: capitalize;
+max-height: 30px;
 
 }
 .colorOffer a{
@@ -66,7 +67,7 @@ border: 1px solid rgba(255,255,255, 0.1);
 border-radius: 30px;
 font-size: 15px;
 margin-bottom: 25px;
-font-family: "Barlow Semi Condensed", sans-serif;
+font-family: "jost", sans-serif;
 text-decoration: none;
 transition: transform .12s ease;
 }
