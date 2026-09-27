@@ -44,14 +44,14 @@ transition: box-shadow 0,3s;
 body{ 
 background: #323232;
 font-family: "tenor sans", sans-serif;
-letter-spacing: 1px;
+letter-spacing: 0.9px;
 }
 .newPrice{
 text-transform: capitalize;
 }
 .colorOffer h2{
 font-family: "tenor sans", sans-serif;
-letter-spacing: 1px;
+letter-spacing: 0.9px;
 font-size: 20px;
 text-transform: capitalize;
 max-height: 30px;
@@ -70,7 +70,7 @@ border-radius: 30px;
 font-size: 15px;
 margin-bottom: 25px;
 font-family: "tenor sans", sans-serif;
-letter-spacing: 1px;
+letter-spacing: 0.9px;
 text-decoration: none;
 transition: transform .12s ease;
 }
@@ -159,7 +159,7 @@ font-size: 20px;
 padding: 10px;
 text-transform: uppercase;
 font-family: "tenor sans", sans serif;
-letter-spacing: 1px;
+letter-spacing: 0.9px;
 color: white;
 margin-top: 29px;
 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
@@ -526,7 +526,7 @@ width: 89%;
 background: white;
 font-size: 17px;
 font-family: "tenor sans", sans-serif;
-letter-spacing: 1px;
+letter-spacing: 0.9px;
 }
 #inputSesion{
 padding: 15px;
