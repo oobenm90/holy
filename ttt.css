@@ -118,6 +118,10 @@ transition: color 0,3s;
 transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease; cursor: pointer;
 }
 .profil-nav{
+display: flex;
+flex-direction: space-between;
+justify-content: center;
+align-items: center;
 color: white;
 text-transform: uppercase;
 
@@ -142,7 +146,7 @@ font-size: 15px;
 padding: 10px;
 }
 img{
-width: 170px;
+width: 180px;
 height: auto;
 }
 .siting{
