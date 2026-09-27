@@ -117,9 +117,9 @@ transition: color 0,3s;
 transition: transform 0.1s ease, background-color 0.2s ease, box-shadow 0.2s ease; cursor: pointer;
 }
 .profil-nav{
-align-items: center;
 color: white;
 text-transform: uppercase;
+
 }
 #serchInput{
 border: 1px solid #0a0a0a;
@@ -141,11 +141,8 @@ font-size: 15px;
 padding: 10px;
 }
 img{
-width: 150px;
+width: 170px;
 height: auto;
-right: 0;
-top: 0;
-
 }
 .siting{
 position: fixed;
