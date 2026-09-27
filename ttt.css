@@ -44,14 +44,12 @@ transition: box-shadow 0,3s;
 body{ 
 background: #323232;
 font-family: "tenor sans", sans-serif;
-letter-spacing: 0.5px;
 }
 .newPrice{
 text-transform: capitalize;
 }
 .colorOffer h2{
 font-family: "tenor sans", sans-serif;
-letter-spacing: 0.5px;
 font-size: 20px;
 text-transform: capitalize;
 max-height: 30px;
@@ -70,7 +68,6 @@ border-radius: 30px;
 font-size: 15px;
 margin-bottom: 25px;
 font-family: "tenor sans", sans-serif;
-letter-spacing: 0.5px;
 text-decoration: none;
 transition: transform .12s ease;
 }
@@ -526,7 +523,6 @@ width: 89%;
 background: white;
 font-size: 15px;
 font-family: "tenor sans", sans-serif;
-letter-spacing: 0.5px;
 }
 #inputSesion{
 padding: 15px;
