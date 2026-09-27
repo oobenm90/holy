@@ -46,15 +46,13 @@ const perfilLink = document.getElementById("perfilLink");
 const perfilView = document.getElementById("perfilView");
 const inicioLink = document.getElementById("inicioLink");
 const hola = document.getElementById("hola");
-const buenas = document.getElementById("buenas");
 const premiumBtn = document.getElementById("premiumBtn");
 const planesCools = document.getElementById("planesCool");
 const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
 const Btnsesion = document.getElementById("Btnsesion");
 const optSMS = document.getElementById("otpSMS");
-const bien = document.getElementById("bien");
-let logo = document.getElementById("logo");
+
 
 serchLink.addEventListener("click", function(event){
 	event.preventDefault();
@@ -62,12 +60,12 @@ perfilView.classList.add("hidden");
 ofertCardsView.classList.remove("hidden");
 serchView.classList.remove("hidden");
 	hola.classList.add("hidden");
-	buenas.classList.add("hidden");
 	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 	cancelar.classList.add("hidden");
 	sesionBtn.classList.add("hidden");
+	
 });
 let serch = document.getElementById("serch");
 
@@ -95,7 +93,6 @@ document.getElementById("ofertCards").innerHTML = cardoffers.join("");
 	perfilView.classList.add("hidden");
 	serchView.classList.add("hidden");
     hola.classList.remove("hidden");
-    buenas.classList.remove("hidden");
     premiumBtn.classList.add("hidden");
     planesCools.classList.add("hidden");
     modofil.classList.add("hidden");
@@ -111,14 +108,11 @@ perfilLink.addEventListener("click", function(event){
 	serchView.classList.add("hidden");
 	perfilView.classList.add("hidden");
 	hola.classList.add("hidden");
-	buenas.classList.add("hidden");
 	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
 	sesionBtn.classList.remove("hidden");
 	cancelar.classList.add("hidden");
-	bien.classList.add("hidden");
-	logo.classList.remove("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
 	event.preventDefault();
@@ -126,8 +120,7 @@ premiumBtn.addEventListener("click", function(event){
 	serchView.classList.add("hiddden");
 	perfilView.classList.add("hidden");
 	hola.classList.add("hidden");
-	buenas.classList.remove("hidden");
-	planesCools.classList.remove("hidden");
+		planesCools.classList.remove("hidden");
 	premiumBtn.classList.add("hidden");
 });
 hola.addEventListener("click", function() {
