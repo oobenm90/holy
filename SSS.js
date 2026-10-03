@@ -52,6 +52,7 @@ const modofil = document.getElementById("modofiltrar");
 const sesionBtn = document.getElementById("sesionBtn");
 const Btnsesion = document.getElementById("Btnsesion");
 const optSMS = document.getElementById("otpSMS");
+const cancelar = document.getElementById("cancelarBtn");
 
 
 serchLink.addEventListener("click", function(event){
