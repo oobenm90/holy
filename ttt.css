@@ -523,6 +523,9 @@ backdrop-filter: blur(5px);
 
 }
 .holaSesion{
+display: flex;
+flex-direction: space-between;
+justify-content: center;
 padding: 10px;
 margin: 10px;
 border: 1px solid rgba(255, 255, 255, 0.1);
@@ -622,4 +625,7 @@ margin: 0;
 .holaicon{
 display: flex;
 flex-direction: space-between;
+}
+.icon{
+margin-right: 5px;
 }
