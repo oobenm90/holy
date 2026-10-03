@@ -1,22 +1,22 @@
 const supabase_url = "https://jqttmpwpuiqrjfhhldyu.supabase.co";
 const supabase_anonKey = "sb_publishable_xb2J3l5ypfLbYMr_1pi9fg_Bx2WHzgx";
  const db = supabase.createClient(supabase_url, supabase_anonKey);
-let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes", badgname: "perfil estander", inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
- {tipo: "business", precio: "59,99€ / mes", badgname: "perfil elite", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"},
- {tipo: "premium", precio: "99,99€ / mes", badgname: "perfil premium", inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"}];
+let planes = [ {tipo: "exclusivo", precio: "9,99€ / mes",  inclone: "perfil completo", incltwo: "Aparición basica", incltree: "atencion basica", link: "https://www.apple.com/es-es"},
+ {tipo: "business", precio: "59,99€ / mes", inclone: "Hasta targeta exclusiva", incltwo: "Aparición de prioredad", incltree:"atencion  exclusivo"},
+ {tipo: "premium", precio: "99,99€ / mes",  inclone: "perfil completo", incltwo: "Aparición prioritaria", incltree: "destacado", link: "https://www.apple.com/es-es"}];
  let plan = planes.map(function(suscription){
-	 return `<div class="Holabuenas ${suscription.tipo}"><span class="perfilBadgs">${suscription.badgname}</span><h2>${suscription.precio}</h2><hr><p class="inclotodo">-${suscription.inclone}</p><p class="inclotodo">-${suscription.incltwo}</p><p class="inclotodo">-${suscription.incltree}</p><a href="${suscription.link}">Prueba 7 días gratis</a></div>`;
+	 return `<div class="Holabuenas ${suscription.tipo}"><h2>${suscription.precio}</h2><hr><p class="inclotodo">-${suscription.inclone}</p><p class="inclotodo">-${suscription.incltwo}</p><p class="inclotodo">-${suscription.incltree}</p><a href="${suscription.link}">Prueba 7 días gratis</a></div>`;
 });
 planesCool = document.getElementById("planesCool").innerHTML = plan.join("");
 
-let offers = [{name: "john smith bieber", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", tipoServicio: "en local", link: "https://wa.me/34635188642"},
-{name: "maria lopiz gomez ", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", tipoServicio: "a domiclio", link: "https://Www.netflix.com/inicio"},
-{name: "ahmed benhiba", image: "III.jpg", servicio: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
+let offers = [{badgname:"estander", name: "john smith bieber", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", tipoServicio: "en local", link: "https://wa.me/34635188642"},
+{badgname: "elite", name: "maria lopiz gomez ", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", tipoServicio: "a domiclio", link: "https://Www.netflix.com/inicio"},
+{badgname: "premium", name: "ahmed benhiba", image: "III.jpg", servicio: "abogado", newPrice: "badalona", link: "https://www.primevideo.com/offers/nonprimehomepage?_ssoLoop=1"},
 {name: "mohamed benhiba", image: "hbomax.jpg", servicio: "electrista", newPrice: "sabadell", link: "https//www.hbomax.com/es/es?gclsrc=aw.ds&gad_source=1&gad_campaignid=22339523404"},
 {name: "apple", image: "apple.jpg", servicio: "psicologa", newPrice: "rubí", link: "https://www.apple.com/es-es"},
 {name: "disney", image: "dsn.jpg", servicio: "abogado", newPrice: "gerona", link: " https://www.disney.com/es-es"}];
 let cardoffers = offers.map( function(offer){
-	return `<div class="colorOffer"><h2>${offer.name}</h2> <img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p><p class="servicio">${offer.tipoServicio}</p> <a href ="${offer.link}">contactar</a></div>`;
+	return `<div class="colorOffer"><span class="perfilBadgs">${offer.badgname}</span><h2>${offer.name}</h2><img class="FFF" src ="${offer.image}"> <p class="oldPrice">${offer.servicio}</p> <p class="newPrice">${offer.newPrice}</p><p class="servicio">${offer.tipoServicio}</p> <a href ="${offer.link}">contactar</a></div>`;
 });
 let filterResult = [{name: "john smith", image: "foto.jpg", servicio: "electricidad", newPrice: "terrassa", link: "https://wa.me/34635188642"},
 {name: "maria lopiz", image: "fotos.jpg", servicio: "psicologa", newPrice: "barcelona", link: "https://Www.netflix.com/inicio"},
