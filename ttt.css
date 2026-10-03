@@ -206,12 +206,12 @@ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 8px 16px rgba(0, 0, 0, 0.4);
 backdrop-filter: blur(15px);
 -webkit-backdrop-filter: blur(15px);
 z-index: 1900;
-font-size: 20px !important;
+font-size: 16px !important;
 transform: scale(0.9);
 transform: center center;
 }
 #serch input{
-font-size: 20px !important;
+font-size: 16px !important;
 }
 .YYY{ 
 display: flex;
@@ -538,6 +538,7 @@ background: #121212;
 border:1px solid rgba(255, 255, 255, 0.1);
 width: 82%;
 margin: 5px;
+font-size: 16px;
 }
 h3{
 font-size: 25px;
