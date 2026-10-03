@@ -341,6 +341,7 @@ flex: 1;
 width: 200px;
 }
 .perfilBadgs{
+font-family: "inter", snas-serif;
 position: absolute;
 top: 0;
 left: 0;
@@ -553,11 +554,11 @@ color: #1ed740;
 border-bottom: #1ed740;
 }
 .servicio{
-text-transform: capitalize;
 position: absolute;
 top: 0;
 right: 0;
 margin-top: -2px;
+font-weight; 900;
 border-radius: 0px 17px 0px 17px;
 font-size: 12px;
 padding: 5px 15px;
