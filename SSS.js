@@ -168,3 +168,15 @@ async function checkUser() {
 	};
 checkUser();
 db.auth.getSession().then(res => console.log(res));
+const cerrar = document.getElementById("cerrar");
+if (cerrar){
+	cerrar.addEventListener("click", async() => {
+		const {error} = await db.auth.signOut();
+if(error){
+	console.error("ha pasado una problema", error.message);
+}else{
+	console.log("acceptado");
+	(onAuthStateChange)
+}
+});
+}
