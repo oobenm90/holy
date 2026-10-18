@@ -107,12 +107,12 @@ perfilLink.addEventListener("click", function(event){
 	event.preventDefault();
 	ofertCardsView.classList.add("hidden");
 	serchView.classList.add("hidden");
-	perfilView.classList.add("hidden");
+	perfilView.classList.remove("hidden");
 	hola.classList.add("hidden");
 	premiumBtn.classList.add("hidden");
 	planesCools.classList.add("hidden");
 	modofil.classList.add("hidden");
-	sesionBtn.classList.remove("hidden");
+	sesionBtn.classList.add("hidden");
 	cancelar.classList.add("hidden");
 });
 premiumBtn.addEventListener("click", function(event){
@@ -160,7 +160,7 @@ async function checkUser() {
 		if(user){
 			let sesionnLink = document.getElementById("perfilLink");
 			sesionnLink.addEventListener("click", function(){
-			hiddenPrefil.classList.remove("hidden");
+			hiddenPerfil.classList.remove("hidden");
 		});
 		}else{
 			hiddenSession.classList.add("hidden");
